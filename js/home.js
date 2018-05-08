@@ -4,4 +4,9 @@ $(document).ready(function(){
 	$('.materialboxed').materialbox();
 });
 
+
+function go_to (element_id) {
+	var top = document.getElementById(element_id).offsetTop;
+	window.scrollTo(0, top);
+}
     

@@ -13,11 +13,19 @@ html, body{
 /*Menu e painel*/
 .opcoes_mobile{
 	height: 10vh;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
 }
 
 .opcoes_desktop{
 	height: 10vh;
 	opacity: 0.95;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
 }
 
 .menu_option_desktop{
@@ -44,6 +52,10 @@ html, body{
 	height: 6vh;
 }
 
+#conteudo_inicial{
+	height: 90%;
+}
+
 #menu_opcoes{
 	width: 100%;
 }
@@ -60,7 +72,7 @@ html, body{
 #superior_div{
 	padding: 0px;	
 	height: auto;	
-	margin-top: 15vh;
+	margin-top: 20vh;
 }
 
 #img_profile{
@@ -71,13 +83,26 @@ html, body{
 
 #welcome_phrase{
 	text-align: center;
-	font-size: 4vh;
-	line-height: 4vh;
+	font-size: 3vh;
+	line-height: 3vh;
+	color: #FFF;
 }
 
 #welcome_sub_phrase{
 	text-align: center;
 	font-size: 2vh;
+	color: #DEDEDE;
 }
 
 
+/*about me*/
+.content_on_the_page{
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	height: 60vh;
+}
+
+.title_abouts{
+	font-size: 4vh;
+	color: #646464;
+}

@@ -20,89 +20,124 @@
     <link type="text/css" rel="stylesheet" href="css/home.css"/>
     <!-- JS local -->
     <script type="text/javascript" src="js/home.js"></script>
+    <script type="text/javascript" src="js/animatescroll.js"></script>
+
 
 </head>
 <body>
-	<div id="conteudo">
-		<!-- Menu lateral -->
-
-		<ul id="slide-out" class="side-nav">
-			<li>
-				<div class="user-view">
-					<div class="background blue-grey darken-1">
-					</div>
-					<a href="home.html"><img class="circle" src="images/perfil.jpg"></a>
-					<a href="#!name"><span class="white-text name">Kairo Emannoel Costa de Souza</span></a>
-					<a href="#!email"><span class="white-text email">kairocosta98@gmail.com</span></a>
+	<!-- Menu lateral -->
+	<ul id="slide-out" class="side-nav">
+		<li>
+			<div class="user-view">
+				<div class="background blue-grey darken-4">
 				</div>
-			</li>
-			<li><a href="#!"><i class="material-icons">person</i>About me</a></li>
-			<li><a href="#!"><i class="material-icons">attach_file</i>My works</a></li>
-			<li><a href="#!"><i class="material-icons">laptop</i>My skills</a></li>
-			<li><a href="#!"><i class="material-icons">contact_mail</i>Contact</a></li>
+				<a href="home.html"><img class="circle" src="images/perfil.jpg"></a>
+				<a href="#!name"><span class="white-text name">Kairo Emannoel Costa de Souza</span></a>
+				<a href="#!email"><span class="white-text email">kairocosta98@gmail.com</span></a>
+			</div>
+		</li>
+		<li><a ><i class="material-icons">person</i>About me</a></li>
+		<li><a href="#!"><i class="material-icons">attach_file</i>My works</a></li>
+		<li><a href="#!"><i class="material-icons">laptop</i>My skills</a></li>
+		<li><a href="#!"><i class="material-icons">contact_mail</i>Contact</a></li>
+		<div class="container">
+			<a href=""><img class="right lang_icon" src="images/bra.png"></a>
+			<a href="home.html"><img class="right lang_icon" src="images/eua.png"></a>
+		</div>		
+	</ul>
+
+
+
+  	<!-- Superior and Menu -->
+  	<div id="topo"></div>
+  	<div class="menu_superior">
+		<div class="opcoes_mobile blue-grey darken-4 hide-on-large-only row z-depth-4">
 			<div class="container">
-				<a href=""><img class="right lang_icon" src="images/bra.png"></a>
-				<a href="home.html"><img class="right lang_icon" src="images/eua.png"></a>
-			</div>		
-		</ul>
-
-	  	<!-- Superior and Menu -->
-
-		<div class="menu_superior">
-
-			<div class="opcoes_mobile blue-grey darken-1 hide-on-large-only row z-depth-4">
-				<div class="container">
-					<a href="home.html"><img class="right" id="logo" src="images/simbolo.png"></a>
-					<i data-activates="slide-out" class="button-collapse small white-text left material-icons" id="menu_icon">menu</i>
-				</div>
+				<a href="home.html"><img class="right" id="logo" src="images/simbolo.png"></a>
+				<i data-activates="slide-out" class="button-collapse small white-text left material-icons" id="menu_icon">menu</i>
 			</div>
-
-			<div class="opcoes_desktop blue-grey darken-1 hide-on-med-and-down z-depth-4">
-				<div class="container row">
-					<div class="col l2 xl2">
-						<a href="home.html"><img id="logo" src="images/simbolo.png"></a>
-					</div>
-					<div class="col l1 xl1"></div>
-					<div class="col l2 xl2 menu_option_desktop">
-						<div>
-							<a href="#">About me</a>
-						</div>
-					</div>				
-					<div class="col l2 xl2 menu_option_desktop">
-						<div>
-							<a href="#">My works</a>
-						</div>
-					</div>				
-					<div class="col l2 xl2 menu_option_desktop">
-						<div>
-							<a href="#">My skills</a>
-						</div>
-					</div>				
-					<div class="col l2 xl2 menu_option_desktop">
-						<div>
-							<a href="#">Contact</a>
-						</div>
-					</div>
-					<div style="padding: 0px;" class="col l1 xl1">
-						<a href=""><img style="width: 30%; float: right;" src="images/bra.png"></a>
-						<a href=""><img style="width: 32%; float: right;" src="images/eua.png"></a>
-					</div>
-				</div>
-			</div>
-
 		</div>
 
+		<div class="opcoes_desktop blue-grey darken-4 hide-on-med-and-down z-depth-4">
+			<div class="container row">
+				<div class="col l2 xl2">
+					<a onclick="$('#topo').animatescroll();"><img id="logo" src="images/simbolo.png"></a>
+				</div>
+				<div class="col l1 xl1"></div>
+				<div class="col l2 xl2 menu_option_desktop">
+					<div onclick="$('#about_me').animatescroll();">
+						<a>About me</a>
+					</div>
+				</div>				
+				<div class="col l2 xl2 menu_option_desktop">
+					<div onclick="$('#my_works').animatescroll();">
+						<a>My works</a>
+					</div>
+				</div>				
+				<div class="col l2 xl2 menu_option_desktop">
+					<div onclick="$('#my_skills').animatescroll();">
+						<a>My skills</a>
+					</div>
+				</div>				
+				<div class="col l2 xl2 menu_option_desktop">
+					<div onclick="$('#contact').animatescroll();">
+						<a>Contact</a>
+					</div>
+				</div>
+				<div style="padding: 0px;" class="col l1 xl1">
+					<a href=""><img style="width: 30%; float: right;" src="images/bra.png"></a>
+					<a href=""><img style="width: 32%; float: right;" src="images/eua.png"></a>
+				</div>
+			</div>
+		</div>
 
-		<div class="row block" id="superior_div">
+	</div>
+
+
+  	<div id="conteudo_inicial">
+		<div class="row" id="superior_div">
 			<div class="row">
 				<div class="container ">
 					<img id="img_profile" class="circle z-depth-4 materialboxed" src="images/perfil.jpg">
-					<p id="welcome_phrase">HELLO, MY NAME IS KAIRO</p>
-					<p id="welcome_sub_phrase">DEVELOPER | DESIGNER</p>
+					<p id="welcome_phrase">HI, MY NAME IS <b>KAIRO EMANNOEL</b></p>
+					<p id="welcome_sub_phrase">DEVELOPER | RESEARCHER | DESIGNER</p>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<div class="white content_on_the_page" id="about_me">
+
+		<div class="container row">
+			<p class="title_abouts center-align">About Me</p>
+		</div>
+
+	</div>
+
+	<div class="blue-grey darken-2 content_on_the_page" id="my_works">
+	
+		<div class="container row">
+			<p class="white-text title_abouts center-align">My Works</p>
+		</div>
+
+	</div>
+
+	<div class="blue-grey darken-3 content_on_the_page" id="my_skills">
+	
+		<div class="container row">
+			<p class="white-text title_abouts center-align">My Skills</p>
+		</div>
+
+	</div>
+
+	<div class="blue-grey darken-4 content_on_the_page" id="contact">
+
+		<div class="container row">
+			<p class="white-text title_abouts center-align">Contact</p>
+		</div>
+
+	</div>	
+
 </body>
 </html>
 
