@@ -136,15 +136,45 @@ html, body{
 .content_on_the_page{
 	padding-top: 2vh;
 	padding-bottom: 2vh;
-	height: 60vh;
 }
 
 .title_abouts{
 	font-size: 4vh;
 	color: #646464;
+	line-height: 0px;
 }
 
 #text_about_me{
 	text-align: justify;
 	font-size: 2vh;
 }
+
+/*my works*/
+
+.work{
+	height: auto; 
+	border-bottom:1px solid #646464;
+}
+
+.work_title{
+	font-size: 4vh; 
+	color:#3949ab; 
+	line-height: 4vh;	
+}
+
+.work_technology{
+	font-size: 2vh; 
+	color:#A4A4A4; 
+	line-height: 4vh;
+}
+
+.work_description{
+	font-size: 2vh; 
+	color:#343434;
+}
+
+
+#my_works{
+	height: auto;
+}
+
