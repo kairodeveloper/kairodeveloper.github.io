@@ -1,12 +1,16 @@
 $(document).ready(function(){
 	$('.collapsible').collapsible();
-	$(".button-collapse").sideNav();
+	$('.button-collapse').sideNav();
 	$('.materialboxed').materialbox();
+    $('select').material_select();	
+    $('.dropdown-button').dropdown();
 });
 
-
-function go_to (element_id) {
-	var top = document.getElementById(element_id).offsetTop;
-	window.scrollTo(0, top);
+function show_element (id) {
+	if($(id).css('display')==='block'){
+		$(id).css('display','none');
+	}else{
+		$(id).css('display','block');
+	}
 }
     

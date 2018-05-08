@@ -10,6 +10,43 @@ html, body{
 	background-clip: border-box;
 }
 
+#btn_bottom_language{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	height:40px;
+	width: 150px;
+	border-radius:5px 0px 0px 0px;
+    box-shadow: 10px 10px 10px 10px #000;
+    z-index: 2000;
+}
+
+#btn_bottom_language div{
+	height: 100%;
+}
+
+#btn_bottom_language:hover{
+	cursor: pointer;
+}
+
+#div_idiomas{
+	position: fixed;
+	bottom: 45px;
+	right: 0; 
+	height: auto; 
+	width: 150px;
+	z-index: 1000;
+	border-radius: 5px 0px 0px 5px;
+	display: none;
+}
+
+.opcoes_menu_idiomas{
+	height: 40px;
+	width: 100%;
+	padding-left:10%;
+	padding-right:10%; 
+}
+
 /*Menu e painel*/
 .opcoes_mobile{
 	height: 10vh;
@@ -105,4 +142,9 @@ html, body{
 .title_abouts{
 	font-size: 4vh;
 	color: #646464;
+}
+
+#text_about_me{
+	text-align: justify;
+	font-size: 2vh;
 }

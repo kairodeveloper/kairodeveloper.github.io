@@ -26,14 +26,27 @@
 </head>
 <body>
 
-	<div class="white" id="div_idiomas">1</div>
+	<div class="white z-depth-3" id="div_idiomas">
+		<ul id="menu_idiomas">
+			<li class="opcoes_menu_idiomas">
+				<a href="" class="black-text"><div>English</div></a>
+			</li>
+			<li class="opcoes_menu_idiomas">
+				<a href="" class="black-text"><div>Português</div></a>
+			</li>
+			<li class="opcoes_menu_idiomas">
+				<a href="" class="black-text"><div>Español</div></a>
+			</li>
+		</ul>
+	</div>
 
-	<div id="btn_bottom_language" class="white z-depth-4">
+	<div id="btn_bottom_language" class="white z-depth-4" onclick="show_element('#div_idiomas');">
 		<div class="row">
-			<div class="col s2"></div>
-			<div class="col s7 valign-wrapper">
+			<div class="col s7 valign-wrapper left-align">
 				English
 			</div>
+			<div class="col s2"></div>
+
 			<div class="col s1 valign-wrapper">
 				<i class="material-icons">arrow_drop_up</i>
 			</div>
@@ -55,11 +68,7 @@
 		<li><a onclick="$('#about_me').animatescroll();"><i class="material-icons">person</i>About me</a></li>
 		<li><a onclick="$('#my_works').animatescroll();"><i class="material-icons">attach_file</i>My works</a></li>
 		<li><a onclick="$('#my_skills').animatescroll();"><i class="material-icons">laptop</i>My skills</a></li>
-		<li><a onclick="$('#contact').animatescroll();"><i class="material-icons">contact_mail</i>Contact</a></li>
-		<div class="container">
-			<a href=""><img class="right lang_icon" src="images/bra.png"></a>
-			<a href=""><img class="right lang_icon" src="images/eua.png"></a>
-		</div>		
+		<li><a onclick="$('#contact').animatescroll();"><i class="material-icons">contact_mail</i>Contact</a></li>	
 	</ul>
 
 
