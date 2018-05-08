@@ -17,7 +17,7 @@ html, body{
 
 .opcoes_desktop{
 	height: 10vh;
-	opacity: 0.85;
+	opacity: 0.95;
 }
 
 .menu_option_desktop{
@@ -57,16 +57,27 @@ html, body{
 	margin-top: 3vh;
 }
 
+#superior_div{
+	padding: 0px;	
+	height: auto;	
+	margin-top: 15vh;
+}
+
 #img_profile{
-	width: 30%;
 	border: 2px solid #666;
 	margin: auto;
-	display: block;
+	height: 40vh;
 }
 
 #welcome_phrase{
 	text-align: center;
 	font-size: 4vh;
+	line-height: 4vh;
+}
+
+#welcome_sub_phrase{
+	text-align: center;
+	font-size: 2vh;
 }
 
 
