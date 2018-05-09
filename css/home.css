@@ -178,3 +178,24 @@ html, body{
 	height: auto;
 }
 
+#div_contact_left{
+	padding:0px; 
+	border-right: 1px solid #646464;
+}
+
+.titles_contact{
+	font-size: 3vh; 
+	line-height: 0px; 
+	text-align: center; 
+	color: #FFF;
+}
+
+.img_social_network{
+	width: 20%;	
+}
+
+.emails{
+	font-size: 2vh; 
+	text-align: center;
+	color: #AAA;
+}
