@@ -121,14 +121,14 @@ body{
 
 #welcome_phrase{
 	text-align: center;
-	font-size: 3vh;
-	line-height: 3vh;
-	color: #000;
+	font-size: 4vh;
+	line-height: 4vh;
+	color: #DEDEDE;
 }
 
 #welcome_sub_phrase{
 	text-align: center;
-	font-size: 2vh;
+	font-size: 3vh;
 	color: #DEDEDE;
 }
 
