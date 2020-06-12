@@ -119,6 +119,13 @@ body{
 	height: 40vh;
 }
 
+#img_text{
+    margin: auto;
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+	height: 30vh;
+}
+
 #welcome_phrase{
 	text-align: center;
 	font-size: 4vh;
@@ -198,5 +205,5 @@ body{
 .emails{
 	font-size: 2vh; 
 	text-align: center;
-	color: #AAA;
+	color: rgb(128, 125, 125);
 }
